@@ -1,0 +1,11 @@
+console.log("A");
+
+process.nextTick(() => {
+    console.log("nextTick");
+});
+
+Promise.resolve().then(() => {
+    console.log("Promise");
+});
+
+console.log("B");
